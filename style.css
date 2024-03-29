@@ -36,7 +36,8 @@ h2{
 .functions{
     width: 100%;
     margin: 20px 0;
-
+    display: flex;
+    gap: 40px;
 }
 .functions input{
     width: 60%;
@@ -48,11 +49,17 @@ h2{
     width: 25% ;
     padding: 10px;
     border: none;
+    border: 1px solid #000;
     border-radius: 5px;
     background-color: #000;
     color: white;
     font-family: 'Calypso';
     cursor: pointer;
+    transition: color 500ms, background-color 500ms;
+}
+.functions button:hover{
+    color: black;
+    background-color: white;
 }
 .gender-card{
     background-color: hotpink;
@@ -62,12 +69,13 @@ h2{
     border-radius: 10px;
 }
 .gender-card h3, p{
+    text-transform: capitalize;
     padding: 20px;
     font-family: "Belleza", sans-serif;
 }
 p{
     letter-spacing: 5px;
-    padding: 20px;
+    padding: 20px
 }
 img{
     height: 70px;
